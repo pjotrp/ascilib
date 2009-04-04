@@ -6,7 +6,7 @@ PROJECT(ASciLib_GSL)
 
 IF(NOT BUILD_LIBS)
   # Building in a local module: Set the module search path manually
-  SET (CMAKE_MODULE_PATH ../../../../../cmake_modules)
+  SET (CMAKE_MODULE_PATH ../../../../cmake_modules)
   IF(NOT IS_DIRECTORY ${CMAKE_MODULE_PATH})
     MESSAGE(FATAL_ERROR "Can not find ASciLib context")
   ENDIF(NOT IS_DIRECTORY ${CMAKE_MODULE_PATH})
