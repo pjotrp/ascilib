@@ -18,11 +18,12 @@ SET(LIBNAME ascilib_gsl-${ASCILIB_VERSION})  # shared library name
 
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../build)
 
-INCLUDE_DIRECTORIES(../../src)
+INCLUDE_DIRECTORIES(.)
+INCLUDE_DIRECTORIES(./gsl)
 
 ADD_LIBRARY(${LIBNAME} SHARED
   ../../../../contrib/gsl/statistics/minmax.c
-  ../../../../contrib/gsl/statistics/minmax_source.c
+  # ../../../../contrib/gsl/statistics/minmax_source.c
 )
 
 # ---- The following may be required for OSX
