@@ -1,0 +1,10 @@
+* GSL
+
+The GSL is in the process of getting mapped based on the Math::GSL
+bindings for Perl.
+
+There are quite a few mappings around for the GSL libraries. Both
+Python and Perl have SWIG mapped editions. The Ruby version is 'hand'
+mapped. With ASciLib we hope to end up with one mapping for all
+languages.
+
