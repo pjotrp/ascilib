@@ -1,0 +1,25 @@
+= ASCILIB =
+
+A Science Lib (ASCILIB) is an initiative to  provide shared libraries for the
+major high-level languages - so as to share one code base for Perl, Ruby,
+Python, JAVA and R. ASciLib is related to BioLib:
+
+  http://biolib.open-bio.org/
+
+The basic idea is to provide infrastructure that allows sharing code rather
+than reinventing the wheel every time between different language
+implementations.
+
+ASciLib provides a minimalistic layer to external C and C++ libraries - using
+SWIG as the primary interface provider. 
+
+For more information see:
+
+The release notes are in ./doc/RELEASE_NOTES.txt
+
+For dependencies see ./doc/DEPENDENCIES.txt
+
+If you wish to contribute subscribe to the BioLib mailing list.
+
+Pjotr Prins
+
