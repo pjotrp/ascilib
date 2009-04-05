@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_integration.h
+../../../../../contrib/gsl/integration/gsl_integration.h

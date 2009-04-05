@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_vector_uchar.h
+../../../../../contrib/gsl/vector/gsl_vector_uchar.h

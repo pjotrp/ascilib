@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_permute_short.h
+../../../../../contrib/gsl/permutation/gsl_permute_short.h

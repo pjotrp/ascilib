@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sum.h
+../../../../../contrib/gsl/sum/gsl_sum.h

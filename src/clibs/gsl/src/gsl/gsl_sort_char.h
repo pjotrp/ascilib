@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sort_char.h
+../../../../../contrib/gsl/sort/gsl_sort_char.h

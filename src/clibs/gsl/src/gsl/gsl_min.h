@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_min.h
+../../../../../contrib/gsl/min/gsl_min.h

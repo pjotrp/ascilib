@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_interp.h
+../../../../../contrib/gsl/interpolation/gsl_interp.h

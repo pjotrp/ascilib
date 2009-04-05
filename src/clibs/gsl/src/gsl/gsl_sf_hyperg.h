@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sf_hyperg.h
+../../../../../contrib/gsl/specfunc/gsl_sf_hyperg.h

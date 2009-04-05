@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_roots.h
+../../../../../contrib/gsl/roots/gsl_roots.h

@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_qrng.h
+../../../../../contrib/gsl/qrng/gsl_qrng.h

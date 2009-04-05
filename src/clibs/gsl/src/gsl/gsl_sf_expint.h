@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sf_expint.h
+../../../../../contrib/gsl/specfunc/gsl_sf_expint.h

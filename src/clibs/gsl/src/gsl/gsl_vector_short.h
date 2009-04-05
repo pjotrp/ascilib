@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_vector_short.h
+../../../../../contrib/gsl/vector/gsl_vector_short.h

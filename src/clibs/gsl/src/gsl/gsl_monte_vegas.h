@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_monte_vegas.h
+../../../../../contrib/gsl/monte/gsl_monte_vegas.h

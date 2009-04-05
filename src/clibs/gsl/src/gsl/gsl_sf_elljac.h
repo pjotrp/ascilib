@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sf_elljac.h
+../../../../../contrib/gsl/specfunc/gsl_sf_elljac.h

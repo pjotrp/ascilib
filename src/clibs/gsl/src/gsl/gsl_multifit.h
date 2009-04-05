@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_multifit.h
+../../../../../contrib/gsl/multifit/gsl_multifit.h

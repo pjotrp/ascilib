@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_permute_uchar.h
+../../../../../contrib/gsl/permutation/gsl_permute_uchar.h

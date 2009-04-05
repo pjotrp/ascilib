@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_ntuple.h
+../../../../../contrib/gsl/ntuple/gsl_ntuple.h

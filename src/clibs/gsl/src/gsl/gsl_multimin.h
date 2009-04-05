@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_multimin.h
+../../../../../contrib/gsl/multimin/gsl_multimin.h

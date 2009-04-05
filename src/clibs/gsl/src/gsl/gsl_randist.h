@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_randist.h
+../../../../../contrib/gsl/randist/gsl_randist.h

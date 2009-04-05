@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_matrix_ulong.h
+../../../../../contrib/gsl/matrix/gsl_matrix_ulong.h

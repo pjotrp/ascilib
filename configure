@@ -67,5 +67,11 @@ echo $library: $plib
 
 sh scripts/cleanup.sh
 
+echo "**** Prepare the GSL..."
+cd contrib/gsl/
+./autogen.sh
+./configure --enable-maintainer-mode
+cd ../..
+
 echo cmake $plang $plib $* . 
 cmake $plang $plib $* . 

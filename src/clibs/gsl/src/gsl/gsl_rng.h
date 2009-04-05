@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_rng.h
+../../../../../contrib/gsl/rng/gsl_rng.h

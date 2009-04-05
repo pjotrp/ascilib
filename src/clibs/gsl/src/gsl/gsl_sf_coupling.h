@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sf_coupling.h
+../../../../../contrib/gsl/specfunc/gsl_sf_coupling.h

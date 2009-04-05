@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_spline.h
+../../../../../contrib/gsl/interpolation/gsl_spline.h

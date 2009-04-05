@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_specfunc.h
+../../../../../contrib/gsl/specfunc/gsl_specfunc.h

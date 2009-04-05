@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_poly.h
+../../../../../contrib/gsl/poly/gsl_poly.h

@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_permute_vector_complex_double.h
+../../../../../contrib/gsl/permutation/gsl_permute_vector_complex_double.h

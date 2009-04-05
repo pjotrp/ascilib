@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_histogram.h
+../../../../../contrib/gsl/histogram/gsl_histogram.h

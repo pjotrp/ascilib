@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_sf_mathieu.h
+../../../../../contrib/gsl/specfunc/gsl_sf_mathieu.h

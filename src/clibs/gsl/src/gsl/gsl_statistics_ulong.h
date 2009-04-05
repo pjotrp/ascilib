@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_statistics_ulong.h
+../../../../../contrib/gsl/statistics/gsl_statistics_ulong.h

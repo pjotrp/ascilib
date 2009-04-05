@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_linalg.h
+../../../../../contrib/gsl/linalg/gsl_linalg.h

@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_wavelet2d.h
+../../../../../contrib/gsl/wavelet/gsl_wavelet2d.h

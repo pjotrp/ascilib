@@ -1,1 +1,1 @@
-../../../../../contrib/gsl/gsl/gsl_statistics_uchar.h
+../../../../../contrib/gsl/statistics/gsl_statistics_uchar.h
