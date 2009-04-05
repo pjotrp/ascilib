@@ -1,8 +1,8 @@
-# Module CMake file - builds GSL library for ASciLib
+# Module CMake file - builds GSL library for ASciLib (A Science Library)
 
 cmake_minimum_required(VERSION 2.6)
 
-PROJECT(ASciLib_GSL)
+PROJECT(ASCILIB_GSL)
 
 IF(NOT BUILD_LIBS)
   # Building in a local module: Set the module search path manually
@@ -12,9 +12,9 @@ IF(NOT BUILD_LIBS)
   ENDIF(NOT IS_DIRECTORY ${CMAKE_MODULE_PATH})
 ENDIF(NOT BUILD_LIBS)
 
-FIND_PACKAGE(ASciLib)
+FIND_PACKAGE(Map)
 
-SET(LIBNAME ascilib_gsl-${ASCILIB_VERSION})  # shared library name
+SET(LIBNAME ${MAP_projectname}_gsl-${MAP_VERSION})  # shared library name
 
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ../build)
 
@@ -23,6 +23,7 @@ INCLUDE_DIRECTORIES(./gsl)
 
 ADD_LIBRARY(${LIBNAME} SHARED
   ../../../../contrib/gsl/statistics/minmax.c
+  ../../../../contrib/gsl/statistics/mean.c
 )
 
 # ---- The following may be required for OSX
