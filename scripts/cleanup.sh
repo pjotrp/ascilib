@@ -14,11 +14,11 @@ find . -name CMakeFiles -exec rm -rvf \{\} \;
 find . -name Testing -exec rm -rvf \{\} \;
 find . -name *.so -exec rm -v \{\} \;
 find . -name *.o -exec rm -v \{\} \;
-rm -v biolib-*.tar.gz
-rm -v biolib-*.tgz
-rm -v biolib-*.tar.bz2
-rm -v biolib-*.zip
-for x in biolib-* ; do 
+rm -v *.tar.gz
+rm -v *.tgz
+rm -v *.tar.bz2
+rm -v *.zip
+for x in ascilib-* ; do 
   if [ -d $x ]; then
     rm -rvf $x
   fi
