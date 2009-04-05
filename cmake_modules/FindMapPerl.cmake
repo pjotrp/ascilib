@@ -1,4 +1,4 @@
-# - Find ASCILIB for Perl settings
+# - Find Perl settings
 #
 # Expects M_NAME, M_VERSION to be set!
 #

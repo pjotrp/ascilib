@@ -1,38 +1,41 @@
-# CMake script to locate external libraries for BioLib
+# CMake script to locate external libraries 
 #
 # Using
 #
 #   USE_RLIB
 #   USE_ZLIB
-#   USE_BIOLIBCORE
+#   USE_CORE
 #
 
 # ---- Using libraries
 
 IF(USE_RLIB)
-  SET (USE_BIOLIBCORE TRUE)
+  SET (USE_CORE TRUE)
   FIND_PACKAGE(RLibs)
 ENDIF(USE_RLIB)
 
 IF(USE_ZLIB)
-  SET (USE_BIOLIBCORE TRUE)
+  SET (USE_CORE TRUE)
   FIND_PACKAGE(ZLIB)
 ENDIF(USE_ZLIB)
 
-IF(USE_BIOLIBCORE)
-  add_definitions(-DBIOLIB)
-	INCLUDE_DIRECTORIES(${BIOLIB_CLIBS_PATH}/biolib_core/include)
+IF(USE_CORE)
+  SET(_LIBNAME ${MAP_projectname}_core)
+  add_definitions(-D${MAP_PROJECTNAME_UPPER})
+	INCLUDE_DIRECTORIES(${MAP_CLIBS_PATH}/${_LIBNAME}/include)
 	if(NOT BUILD_LIBS)
-    FIND_LIBRARY(BIOLIB_LIBRARY NAMES libbiolib_core-${BIOLIB_VERSION}.so PATHS ${BIOLIB_CLIBS_PATH}/biolib_core/build)
-	  message("Found ${BIOLIB_LIBRARY}")
+    FIND_LIBRARY(CORE_LIBRARY NAMES lib${_LIBNAME}-${MAP_VERSION}.so PATHS ${MAP_CLIBS_PATH}/${_LIBNAME}/build)
+	  message("Found ${CORE_LIBRARY}")
   endif(NOT BUILD_LIBS)
-ENDIF(USE_BIOLIBCORE)
+  # UNSET(_LIBNAME)
+  SET(_LIBNAME 'unknown')
+ENDIF(USE_CORE)
 
 IF(USE_RLIB)
   # handle the QUIETLY and REQUIRED arguments and set RLIBS_FOUND to TRUE if 
   # all listed variables are TRUE
   INCLUDE(FindPackageHandleStandardArgs)
-  FIND_PACKAGE_HANDLE_STANDARD_ARGS(RLibs DEFAULT_MSG BIOLIB_VERSION)
+  FIND_PACKAGE_HANDLE_STANDARD_ARGS(RLibs DEFAULT_MSG MAP_VERSION)
 ENDIF(USE_RLIB)
 
 
