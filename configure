@@ -57,7 +57,6 @@ case $library in
 	plib="-DGSL_LIB:BOOLEAN=TRUE"
 	shift
 	;;
-	;;
   *)
   echo "ascilib building all libraries"
 	plib=""

@@ -70,7 +70,7 @@ set(BLD_GSL TRUE)
 message("  ASciLib libraries")
 message(STATUS "Install GSL ${BLD_GSL}")
 
-FIND_PACKAGE(ASciLib)
+FIND_PACKAGE(Map)
 
 # SET(CMAKE_BUILD_TYPE Debug)  Release is on by default
 if(DEBUG)
