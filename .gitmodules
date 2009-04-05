@@ -3,4 +3,5 @@
 	url = git://git.sv.gnu.org/gsl.git
 [submodule "src/mappings/swig/contrib/math--gsl"]
 	path = src/mappings/swig/contrib/math--gsl
-	url = git@github.com:pjotrp/math--gsl.git
+	url = git://github.com/pjotrp/math--gsl.git
+	
