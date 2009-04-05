@@ -1,0 +1,72 @@
+#! /bin/bash
+# 
+# This is a simple dropin for configure - so as to make life easier
+# for newcomers to cmake.
+#
+# A number of switches gets translated use ./configure with:
+#
+#   --with-perl       : build ascilib for Perl (default)
+#   --with-ruby       : build ascilib for Ruby
+#   --with-python     : build ascilib for Python
+#
+# In addition libraries can be specified
+
+#   --with-gsl        : see the ascilib docs
+
+
+if [ ! -d ./src ]; then
+	echo "FATAL: run from the root of the ascilib tree"
+	exit 1
+fi
+
+language=$1
+if [ -z $language ]; then
+  language='--with-perl'
+fi
+
+case $language in
+  '--help')
+	echo "See the ./INSTALL document for configuration options"
+	exit 1
+	;;
+  '--with-perl')
+	plang="-DBUILD_PERL:BOOLEAN=TRUE"
+	shift
+	;;
+  '--with-ruby')
+	plang="-DBUILD_RUBY:BOOLEAN=TRUE"
+	shift
+	;;
+  '--with-python')
+	plang="-DBUILD_PYTHON:BOOLEAN=TRUE"
+	shift
+	;;
+  *)
+  echo "ascilib defaulting to Perl build"
+	plang="-DBUILD_PERL:BOOLEAN=TRUE"
+	library=$language
+esac
+
+if [ -z $library ]; then
+  library=$1
+	shift
+fi
+
+case $library in
+  '--with-gsl')
+	plib="-DGSL_LIB:BOOLEAN=TRUE"
+	shift
+	;;
+	;;
+  *)
+  echo "ascilib building all libraries"
+	plib=""
+esac
+
+echo $language: $plang
+echo $library: $plib
+
+sh scripts/cleanup.sh
+
+echo cmake $plang $plib $* . 
+cmake $plang $plib $* . 
