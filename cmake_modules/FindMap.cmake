@@ -1,7 +1,7 @@
-# - Find MAPPING settings
+# Global MAPPING settings
 #
 
-# ---- Get MAP root
+# ---- Get MAP source root directory
 get_filename_component(MAP_ROOT ${CMAKE_MODULE_PATH} PATH)
 SET(MAP_CLIBS_PATH ${MAP_ROOT}/src/clibs)
 
@@ -14,8 +14,11 @@ IF(WIN32)
 ENDIF(WIN32)
 
 EXEC_PROGRAM(${cat_prog} ARGS ${MAP_ROOT}/VERSION OUTPUT_VARIABLE MAP_VERSION)
+EXEC_PROGRAM(${cat_prog} ARGS ${MAP_ROOT}/PROJECTNAME OUTPUT_VARIABLE MAP_PROJECTNAME)
 
-# ---- Add a predefinde build variable
+string(TOLOWER ${MAP_PROJECTNAME} MAP_projectname)
+
+# ---- Add a predefined build variable
 add_definitions(-DMAP_BUILD)
 
 # ---- Set default installation prefix
@@ -44,12 +47,13 @@ SET(CMAKE_INSTALL_RPATH_USE_LINK_PATH FALSE)
 MESSAGE("CMAKE_INSTALL_PREFIX=${CMAKE_INSTALL_PREFIX}")
 MESSAGE("MAP_ROOT=${MAP_ROOT}")
 MESSAGE("MAP_CLIBS_PATH=${MAP_CLIBS_PATH}")
+MESSAGE("MAP_PROJECTNAME=${MAP_projectname}")
 MESSAGE("MAP_VERSION=${MAP_VERSION}")
 
 # handle the QUIETLY and REQUIRED arguments and set RLIBS_FOUND to TRUE if 
 # all listed variables are TRUE
 INCLUDE(FindPackageHandleStandardArgs)
-FIND_PACKAGE_HANDLE_STANDARD_ARGS(xRLibs DEFAULT_MSG MAP_VERSION)
+FIND_PACKAGE_HANDLE_STANDARD_ARGS(xRLibs DEFAULT_MSG MAP_VERSION MAP_projectname)
 
 MARK_AS_ADVANCED(
   MAP_ROOT
