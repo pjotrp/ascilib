@@ -1,3 +1,3 @@
-%module staden_io_lib
+%module gsl
 
-%include ../../staden_io_lib.i
+%include ../../gsl_common.i

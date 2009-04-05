@@ -9,6 +9,9 @@ SET (INTERFACE perl_${M_NAME}.i)
 IF(NOT BUILD_LIBS)
   SET (CMAKE_MODULE_PATH ../../../../../cmake_modules)
 ENDIF(NOT BUILD_LIBS)
+
+SET (USE_SWIG_INCLUDEPATH "../../contrib/math--gsl/swig")
+
 # SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ascilib)
 
 # SET (USE_INCLUDEPATH io_lib)
