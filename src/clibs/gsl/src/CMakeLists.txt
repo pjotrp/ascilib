@@ -36,25 +36,10 @@ IF (NOT EXISTS ${GSL_CONFIG})
   message("Finished configuring ./contrib/gsl ${result_gsl}")
 ENDIF (NOT EXISTS ${GSL_CONFIG})
 
+FILE(STRINGS gsl_files.txt GSL_FILES)
+
 ADD_LIBRARY(${LIBNAME} SHARED
-  ${GSL_CONTRIB_PATH}/statistics/absdev.c
-  ${GSL_CONTRIB_PATH}/statistics/covariance.c
-  ${GSL_CONTRIB_PATH}/statistics/kurtosis.c
-  ${GSL_CONTRIB_PATH}/statistics/lag1.c
-  ${GSL_CONTRIB_PATH}/statistics/mean.c
-  ${GSL_CONTRIB_PATH}/statistics/median.c
-  ${GSL_CONTRIB_PATH}/statistics/minmax.c
-  ${GSL_CONTRIB_PATH}/statistics/p_variance.c
-  ${GSL_CONTRIB_PATH}/statistics/quantiles.c
-  ${GSL_CONTRIB_PATH}/statistics/skew.c
-  ${GSL_CONTRIB_PATH}/statistics/ttest.c
-  ${GSL_CONTRIB_PATH}/statistics/variance.c
-  ${GSL_CONTRIB_PATH}/statistics/wabsdev.c
-  ${GSL_CONTRIB_PATH}/statistics/wcovar.c
-  ${GSL_CONTRIB_PATH}/statistics/wkurtosis.c
-  ${GSL_CONTRIB_PATH}/statistics/wmean.c
-  ${GSL_CONTRIB_PATH}/statistics/wskew.c
-  ${GSL_CONTRIB_PATH}/statistics/wvariance.c
+  ${GSL_FILES}
 )
 
 # ---- The following may be required for OSX
