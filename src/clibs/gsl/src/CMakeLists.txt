@@ -6,7 +6,7 @@ PROJECT(ASCILIB_GSL)
 
 IF(NOT BUILD_LIBS)
   # Building in a local module: Set the module search path manually
-  SET (CMAKE_MODULE_PATH ../../../../cmake_modules)
+  SET (CMAKE_MODULE_PATH ${GSL_CONTRIB_PATH}/cmake_modules)
   IF(NOT IS_DIRECTORY ${CMAKE_MODULE_PATH})
     MESSAGE(FATAL_ERROR "Can not find ASciLib context")
   ENDIF(NOT IS_DIRECTORY ${CMAKE_MODULE_PATH})
@@ -37,8 +37,24 @@ IF (NOT EXISTS ${GSL_CONFIG})
 ENDIF (NOT EXISTS ${GSL_CONFIG})
 
 ADD_LIBRARY(${LIBNAME} SHARED
-  ../../../../contrib/gsl/statistics/minmax.c
-  ../../../../contrib/gsl/statistics/mean.c
+  ${GSL_CONTRIB_PATH}/statistics/absdev.c
+  ${GSL_CONTRIB_PATH}/statistics/covariance.c
+  ${GSL_CONTRIB_PATH}/statistics/kurtosis.c
+  ${GSL_CONTRIB_PATH}/statistics/lag1.c
+  ${GSL_CONTRIB_PATH}/statistics/mean.c
+  ${GSL_CONTRIB_PATH}/statistics/median.c
+  ${GSL_CONTRIB_PATH}/statistics/minmax.c
+  ${GSL_CONTRIB_PATH}/statistics/p_variance.c
+  ${GSL_CONTRIB_PATH}/statistics/quantiles.c
+  ${GSL_CONTRIB_PATH}/statistics/skew.c
+  ${GSL_CONTRIB_PATH}/statistics/ttest.c
+  ${GSL_CONTRIB_PATH}/statistics/variance.c
+  ${GSL_CONTRIB_PATH}/statistics/wabsdev.c
+  ${GSL_CONTRIB_PATH}/statistics/wcovar.c
+  ${GSL_CONTRIB_PATH}/statistics/wkurtosis.c
+  ${GSL_CONTRIB_PATH}/statistics/wmean.c
+  ${GSL_CONTRIB_PATH}/statistics/wskew.c
+  ${GSL_CONTRIB_PATH}/statistics/wvariance.c
 )
 
 # ---- The following may be required for OSX
