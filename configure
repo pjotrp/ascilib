@@ -19,6 +19,12 @@ if [ ! -d ./src ]; then
 	exit 1
 fi
 
+if [ -d .git ]; then
+	echo "Updating git submodules"
+	git submodule init
+	git submodule update
+fi
+
 language=$1
 if [ -z $language ]; then
   language='--with-perl'
@@ -66,12 +72,6 @@ echo $language: $plang
 echo $library: $plib
 
 sh scripts/cleanup.sh
-
-echo "**** Prepare the GSL..."
-cd contrib/gsl/
-./autogen.sh
-./configure --enable-maintainer-mode
-cd ../..
 
 echo cmake $plang $plib $* . 
 cmake $plang $plib $* . 
