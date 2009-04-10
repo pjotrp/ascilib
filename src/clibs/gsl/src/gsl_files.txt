@@ -1,3 +1,4 @@
+${GSL_CONTRIB_PATH}/version.c
 ${GSL_CONTRIB_PATH}/blas/blas.c
 ${GSL_CONTRIB_PATH}/block/block.c
 ${GSL_CONTRIB_PATH}/block/file.c
