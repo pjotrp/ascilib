@@ -11,10 +11,11 @@ IF(NOT BUILD_LIBS)
 ENDIF(NOT BUILD_LIBS)
 
 SET (USE_SWIG_INCLUDEPATH "../../contrib/math--gsl/swig")
+# SET (USE_SWIG_FLAGS "-v")
 
+INCLUDE_DIRECTORIES(../../../../clibs/gsl/src/gsl)
 # SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ascilib)
-
-# SET (USE_INCLUDEPATH io_lib)
+# SET (USE_INCLUDEPATH src/gsl)
 
 # INCLUDE(CMakeBackwardCompatibilityC)
 

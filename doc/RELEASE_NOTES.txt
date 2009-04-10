@@ -8,5 +8,5 @@ ASciLib 0.01
 
 - Adapted the BioLib build system for ASciLib
 - Imported GSL and Math::GSL as git submodules
-- Builds a sample of GSL methods in ./src/clibs/gsl
+- Builds all GSL methods in ./src/clibs/gsl
 

@@ -248,7 +248,7 @@ ${GSL_CONTRIB_PATH}/histogram/pdf.c
 ${GSL_CONTRIB_PATH}/histogram/reset2d.c
 ${GSL_CONTRIB_PATH}/histogram/reset.c
 ${GSL_CONTRIB_PATH}/histogram/stat2d.c
-${GSL_CONTRIB_PATH}/histogram/stat.c i
+${GSL_CONTRIB_PATH}/histogram/stat.c
 ${GSL_CONTRIB_PATH}/ieee-utils/env.c
 ${GSL_CONTRIB_PATH}/ieee-utils/fp.c
 ${GSL_CONTRIB_PATH}/ieee-utils/make_rep.c
