@@ -4,7 +4,6 @@
 
 %include Statistics.i
 %include Sum.i 
-/*
 %include BLAS.i 
 %include BSpline.i
 %include CDF.i
@@ -35,7 +34,6 @@
 %include Siman.i 
 %include Wavelet2D.i
 %include Wavelet.i
-*/
 /* 
 Succeed when mapped in isolation (need to make modules) 
 
