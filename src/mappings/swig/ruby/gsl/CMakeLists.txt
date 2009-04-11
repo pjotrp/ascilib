@@ -10,6 +10,7 @@ IF(NOT BUILD_LIBS)
 ENDIF(NOT BUILD_LIBS)
 
 SET (USE_SWIG_INCLUDEPATH "../../contrib/math--gsl/swig")
+# SET (USE_SWIG_FLAGS "-debug-module;2")
 
 # INCLUDE(CMakeBackwardCompatibilityC)
 SET(CMAKE_LIBRARY_OUTPUT_DIRECTORY ascilib)

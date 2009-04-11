@@ -1,3 +1,3 @@
 %module gsl 
 
-%include ../../gsl_common.i
+%include ../../gsl_ruby.i

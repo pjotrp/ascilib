@@ -26,7 +26,7 @@ FIND_PACKAGE(MapLibraries REQUIRED)
 
 SET (USE_LANGUAGE "ruby")
 SET (USE_LANGUAGE_LIBRARY ${RUBY_LIBRARY})
-SET (USE_SWIG_FLAGS ";-prefix;'${MAP_projectname}::'")
+SET (USE_SWIG_FLAGS "-prefix;'${MAP_projectname}::';${USE_SWIG_FLAGS}")
 
 FIND_PACKAGE(MapSWIG REQUIRED)
 
