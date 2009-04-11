@@ -8,9 +8,11 @@ data =   [
         16, 18, 20, 18, 21
     ];
 
-# result = Ascilib::gsl_stats_kurtosis(data, 1, 20);
-# raise 'test failed' if result != 766
 result = Ascilib::Gsl.gsl_stats_mean([3,4,5,7],1,4);
 raise 'test failed' if result != 4.75
+
+result = Ascilib::Gsl.gsl_stats_kurtosis(data, 1, 20);
+result = (result*100).to_i
+raise 'test failed' if result != -23
 
 exit 0
