@@ -30,6 +30,8 @@ project (ASCILIB)
 ENABLE_TESTING()
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/tools/cmake-support/modules/")
 message("CMake modules: ${CMAKE_MODULE_PATH}")
+
+FIND_PACKAGE(GitSubmodules)
 include(CheckIncludeFiles)
 
 message("Building ASciLib:")
