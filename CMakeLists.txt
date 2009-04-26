@@ -28,7 +28,7 @@ cmake_minimum_required(VERSION 2.6)
 project (ASCILIB)
 
 ENABLE_TESTING()
-set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules/")
+set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/tools/cmake-support/modules/")
 message("CMake modules: ${CMAKE_MODULE_PATH}")
 include(CheckIncludeFiles)
 
@@ -83,7 +83,7 @@ SET(BUILD_SHARED_LIBS ${DEFAULT_BUILD_SHARED_LIBS} CACHE BOOL "Building shared o
 
 # Documentation
 if (BUILD_DOCS)
-INCLUDE (cmake_modules/APIDoc.cmake)
+  FIND(APIDoc.cmake)
 endif (BUILD_DOCS)
 
 # Turn off chatty makefiles by default.  To make them chatty again,
