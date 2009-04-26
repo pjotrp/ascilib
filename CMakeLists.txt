@@ -83,7 +83,7 @@ SET(BUILD_SHARED_LIBS ${DEFAULT_BUILD_SHARED_LIBS} CACHE BOOL "Building shared o
 
 # Documentation
 if (BUILD_DOCS)
-  FIND(APIDoc.cmake)
+  FIND_PACKAGE(APIDoc)
 endif (BUILD_DOCS)
 
 # Turn off chatty makefiles by default.  To make them chatty again,
@@ -102,11 +102,6 @@ SET(THIRD_PARTY_INCLUDE_PATH "" CACHE PATH "Default search path for third-party 
 add_subdirectory (src)
 include(src)
 
-# Some status information at build time
-message("CMake: ${CMAKE_CACHE_MAJOR_VERSION}.${CMAKE_CACHE_MINOR_VERSION}-${CMAKE_CACHE_RELEASE_VERSION}")
-message("SWIG: ${SWIG_EXECUTABLE} ${SWIG_VERSION}")
-message("System: ${CMAKE_SYSTEM_PROCESSOR} ${CMAKE_SYSTEM_NAME} ${CMAKE_SYSTEM_VERSION}")
-message("  Build type: ${CMAKE_BUILD_TYPE} for ${CMAKE_HOST_SYSTEM_PROCESSOR}")
-EXECUTE_PROCESS(COMMAND /bin/date)
+FIND_PACKAGE(SystemInfo)
 
 
