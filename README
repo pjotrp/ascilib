@@ -13,6 +13,10 @@ implementations.
 ASciLib provides a minimalistic layer to external C and C++ libraries - using
 SWIG as the primary interface provider. 
 
+At this point ASciLib is a proof-of-concept. Perl should work fine - as this is
+based on Jonathan Leto's Math::GSL. It compiles and integrates for Ruby - a lot
+of functions should work.
+
 For more information see:
 
 The release notes are in ./doc/RELEASE_NOTES.txt
