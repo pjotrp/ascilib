@@ -15,7 +15,8 @@ SWIG as the primary interface provider.
 
 At this point ASciLib is a proof-of-concept. Perl should work fine - as this is
 based on Jonathan Leto's Math::GSL. It compiles and integrates for Ruby - a lot
-of functions should work.
+of functions should work. One of the interesting features of ASciLib is that it
+*includes* recent GSL sources. So if you need to use the latest...
 
 For more information see:
 
