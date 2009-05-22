@@ -19,6 +19,13 @@ if [ ! -d ./src ]; then
 	exit 1
 fi
 
+if [ -d .git ]; then
+  if [ ! -e .git/SKIP_SUBMODULE_UPDATE ]; then
+    echo "Checking for git submodules"
+    git submodule update --init
+  fi
+fi
+
 language=$1
 if [ -z $language ]; then
   language='--with-perl'
